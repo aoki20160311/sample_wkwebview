@@ -14,6 +14,8 @@
 		18AFCD9D1FA44B1E008D665C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AFCD9B1FA44B1E008D665C /* LaunchScreen.storyboard */; };
 		18AFCDA81FA44B1E008D665C /* sample_wkwebviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFCDA71FA44B1E008D665C /* sample_wkwebviewTests.swift */; };
 		18AFCDB31FA44B1E008D665C /* sample_wkwebviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFCDB21FA44B1E008D665C /* sample_wkwebviewUITests.swift */; };
+		18AFCDC11FA44CD1008D665C /* html in Resources */ = {isa = PBXBuildFile; fileRef = 18AFCDC01FA44CD1008D665C /* html */; };
+		18AFCDC51FA4D8CD008D665C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AFCDC31FA46F19008D665C /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		18AFCDAE1FA44B1E008D665C /* sample_wkwebviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sample_wkwebviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AFCDB21FA44B1E008D665C /* sample_wkwebviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_wkwebviewUITests.swift; sourceTree = "<group>"; };
 		18AFCDB41FA44B1E008D665C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AFCDC01FA44CD1008D665C /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		18AFCDC31FA46F19008D665C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AFCDC51FA4D8CD008D665C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				18AFCDA61FA44B1E008D665C /* sample_wkwebviewTests */,
 				18AFCDB11FA44B1E008D665C /* sample_wkwebviewUITests */,
 				18AFCD901FA44B1E008D665C /* Products */,
+				18AFCDC21FA46F19008D665C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +105,7 @@
 			children = (
 				18AFCD921FA44B1E008D665C /* AppDelegate.swift */,
 				18AFCD941FA44B1E008D665C /* ViewController.swift */,
+				18AFCDC01FA44CD1008D665C /* html */,
 				18AFCD961FA44B1E008D665C /* Main.storyboard */,
 				18AFCD991FA44B1E008D665C /* Assets.xcassets */,
 				18AFCD9B1FA44B1E008D665C /* LaunchScreen.storyboard */,
@@ -123,6 +130,14 @@
 				18AFCDB41FA44B1E008D665C /* Info.plist */,
 			);
 			path = sample_wkwebviewUITests;
+			sourceTree = "<group>";
+		};
+		18AFCDC21FA46F19008D665C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18AFCDC31FA46F19008D665C /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +208,7 @@
 				TargetAttributes = {
 					18AFCD8E1FA44B1E008D665C = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = NT5DXL48RM;
 						ProvisioningStyle = Automatic;
 					};
 					18AFCDA21FA44B1E008D665C = {
@@ -233,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18AFCD9D1FA44B1E008D665C /* LaunchScreen.storyboard in Resources */,
+				18AFCDC11FA44CD1008D665C /* html in Resources */,
 				18AFCD9A1FA44B1E008D665C /* Assets.xcassets in Resources */,
 				18AFCD981FA44B1E008D665C /* Main.storyboard in Resources */,
 			);
@@ -412,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NT5DXL48RM;
 				INFOPLIST_FILE = sample_wkwebview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample-wkwebview";
@@ -424,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NT5DXL48RM;
 				INFOPLIST_FILE = sample_wkwebview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample-wkwebview";
